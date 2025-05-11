@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+    <style type="text/css">
+        li {
+            list-style: none;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        iframe {
+            width: 70vh;
+            height: 40vh;
+            border: none;
+        }
+       
+
+    </style>
+<body>
+
+<section>
+    <nav>
+        <ul>
+            <li>
+                <a href="/public/images/amazon.jpg">Kids</a>
+            </li>
+
+            <li>
+                <a href="/public/images/LanaDelRay.jpg">Womens</a>
+            </li>
+
+            <li> 
+                <a href="/public/images/room banner.png"  download="banner.doc">Resume.doc</a>  <!-- Document -->
+            </li>
+
+            <li>
+                <a href="/public/images/netflix-background.jpg" download="bla bla">Springboot</a> <!-- PDF -->
+            </li>
+
+            <li>
+                <span class="bi bi-printer-fill"></span>
+                <a href="javascript:window.print()">Printer</a>
+            </li>
+            
+            <li>  <!-- Image open on a new Window-->
+                <a href="javascript:window.open('/public/images/netflix-background.jpg')">Banner</a> <!-- Image open on a new Window-->
+            </li>
+
+            <li>
+                <a href="/public/images/netflix-background.jpg" target="main-frame">Netflix</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <iframe name="main-frame"></iframe>
+     </main>
+
+</section>  
+
+    
+</body>
+</html>
