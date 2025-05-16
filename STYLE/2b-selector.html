@@ -1,0 +1,29 @@
+<!-- 
+c. Is it possible to group the selectors to apply the same effects on different elements ?
+
+Yes, it’s possible using comma( " , " ) as a delimiter.
+The last occurrence of the style declaration will take precedence.** This is because CSS rules 
+are processed sequentially, and the last rule that matches an element will override any previous rules. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+            #head, .heading {
+                text-align: center;
+                color: blue;
+                background-color:rgb(159, 159, 249) ;
+            }
+    </style>
+</head>
+<body>
+    
+    <h1 id="head">HTML</h1>
+    <p class="heading">CSS</p>
+</body>
+</html>
