@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attribute Selectors Example</title>
+  <style>
+    /* Example 1: Exact match */
+    [class="Effects"] {
+      color: red;
+    }
+
+    /* Example 2: Starts with */
+    [class^="Effects"] {
+      font-weight: bold;
+    }
+
+    /* Example 3: Ends with */
+    [class$="Effects"] {
+      text-decoration: underline;
+    }
+
+    /* Example 4: Contains */
+    [class*="Effects"] {
+      background-color: yellow;
+    }
+
+    /* Example 5: Multiple attributes */
+    [class="Effects"][value="value"] {
+      font-style: italic;
+    }
+
+    /* Example 6: Multiple attributes with spaces */
+    [class="Effects"][value="value"] {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <p class="Effects">para-1</p>
+  <p class="Effect">para-2</p>
+  <p class="Effects">para-3</p>
+  <p class="Effect">para-4</p>
+  <p class="Effects value">para-5</p>
+  <p class="Effects value">para-6</p>
+  <p class="Effect">para-7</p>
+</body>
+</html>
