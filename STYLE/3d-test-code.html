@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+       
+    p {
+        text-align: justify;
+    }
+    #data::first-line {
+        color: blue;
+        font-size: 30px;
+    }
+    #para::selection {
+        color: rgb(0, 153, 255);
+        font-size: 20px;
+    }
+
+    ol {
+        display: flex;
+        list-style-type: none;
+    }
+    li::after {
+        content: ">>";
+       
+    }
+    
+    li:last-child::after {
+        content: " ";
+    }
+    
+    li:last-child {
+        color: blueviolet;
+        background-color: rgb(201, 174, 248);
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <p id="data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae neque dolores, exercitationem nulla magni. Ipsam tenetur, porro omnis reiciendis illo minima repudiandae nostrum. A cumque eum veniam praesentium possimus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non quod reprehenderit quos voluptatem perspiciatis illo repellat temporibus, blanditiis tempore in nemo nostrum nulla. Quidem iure eos omnis aliquam dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae neque dolores, exercitationem nulla magni. Ipsam tenetur, porro omnis reiciendis illo minima repudiandae nostrum. A cumque eum veniam praesentium possimus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non quod reprehenderit quos voluptatem perspiciatis illo repellat temporibus, blanditiis tempore in nemo nostrum nulla. Quidem iure eos omnis aliquam dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae neque dolores, exercitationem nulla magni. Ipsam tenetur, porro omnis reiciendis illo minima repudiandae nostrum. A cumque eum veniam praesentium possimus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non quod reprehenderit quos voluptatem perspiciatis illo repellat temporibus, blanditiis tempore in nemo nostrum nulla. Quidem iure eos omnis aliquam dolorum.
+    </p>
+
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae neque dolores, exercitationem nulla magni. Ipsam tenetur, porro omnis reiciendis illo minima repudiandae nostrum. A cumque eum veniam praesentium possimus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non quod reprehenderit quos voluptatem perspiciatis illo repellat temporibus, blanditiis tempore in nemo nostrum nulla. Quidem iure eos omnis aliquam dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae neque dolores, exercitationem nulla magni. Ipsam tenetur, porro omnis reiciendis illo minima repudiandae nostrum. A cumque eum veniam praesentium possimus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non quod reprehenderit quos voluptatem perspiciatis illo repellat temporibus, blanditiis tempore in nemo nostrum nulla. Quidem iure eos omnis aliquam dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae neque dolores, exercitationem nulla magni. Ipsam tenetur, porro omnis reiciendis illo minima repudiandae nostrum. A cumque eum veniam praesentium possimus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, non quod reprehenderit quos voluptatem perspiciatis illo repellat temporibus, blanditiis tempore in nemo nostrum nulla. Quidem iure eos omnis aliquam dolorum.
+    </p>
+
+    
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>=
+        <li>React.js</li>
+    </ol>
+    
+</body>
+</html>
