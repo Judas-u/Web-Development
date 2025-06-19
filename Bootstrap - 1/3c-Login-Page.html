@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style type="text/css">
+        ul {
+            list-style: none;
+        }
+        li a {
+            text-decoration: none;
+        }
+       #blur{
+            background-color:rgba(0,0,0,0.5);
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body background="/public/images/netflix-background.jpg" 
+      class="container-fluid d-flex justify-content-center align-items-center p-5">
+      
+    <div class="w-25 p-3 border border-2 border-secondary-subtle  justify-content-center " id="blur">
+        <div class="h4">
+            Sign in 
+        </div>
+
+        <div>
+            <label class="form-label " for="txtEmail" >
+                Email or mobile phone number
+            </label>
+            <div>
+                <input type="text" name="txtEmail" class="form-control w-100" placeholder="Enter e-mail or number" >
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <button class="btn btn-warning w-100">Continue</button>
+        </div>
+
+        <div class="mt-3">
+            <p class="fs-6">
+                By continuing , you agree to Amazon's 
+                <a href="javascript:void(location.herf = ' ' )">
+                    Conditions of User
+                </a> and 
+                    <a href="javascript:void(location.herf = ' ' )">
+                        Privacy
+                    </a>
+            </p>
+        </div>
+
+        <div>
+            <details>
+                <summary>
+                    <a href="">I need Help?</a>
+                </summary>
+                <ol type="a">
+                    <li>
+                        <a href="">Login Problem</a>
+                    </li>
+                    <li>
+                        <a href="">Sever Error</a>
+                    </li>
+                </ol>
+            </details>
+        </div>
+    </div>
+</body>
+</html>
