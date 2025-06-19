@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container bg-secondary p-3">
+    <div class="bg-white w-100 p-3 ">
+        <div class="h3 m-4 bg-dark text-white">PERSONAL EMI CALCULATOR</div>
+        <!-- First row -->
+        <div class="row">
+            <div class="col">
+                <label >Amount you need</label>
+                <input type="text" value="&#8377;5,00,000">
+            </div>
+            <div class="col">
+                <label >for</label>
+                <input type="text" value="5">
+                <label>years</label>
+            </div>
+            <div class="col">
+                <label >Interest Rate</label>
+                <input type="text" value="10.5">
+                <label >%</label>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="range" min="50000" max="4000000" class="w-100">
+            </div>
+            <div class="col">
+                <input type="range" min="1" max="5"  class="w-100">
+            </div>
+            <div class="col">
+                <input type="range" min="10.5" max="21"  class="w-100">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <span>50,000</span>
+                <span class="float-end">40,00,000</span>
+            </div>
+            <div class="col">
+                <span>1 year</span>
+                <span class="float-end">5 year</span>
+            </div>
+            <div class="col">
+                <span>10.5%</span>
+                <span class="float-end">21%</span>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary float-end">Calculate</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
