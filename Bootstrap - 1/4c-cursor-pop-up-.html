@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+
+    <style type="text/css">
+
+        input:focus + div{
+            display: block;
+            color: rgb(255, 255, 255);
+        }
+        input + div {
+            display: none;
+            
+        }
+        .bi-info-circle {
+            background-color: rgb(136, 212, 235);
+            padding: 5px;
+            border-radius: 3px;
+            position: fixed;   /* Important */
+            margin-top: 5px;
+        }
+        input::placeholder{
+            color: blueviolet;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <form class="container-fluid">
+        <div class="mt-3 p-3">
+            <dt>Username</dt>
+            <dd>
+                <input type="text" name="txtUser" placeholder="Enter username"> 
+                <div>
+                    <span class="bi bi-info-circle">Username in Uppercase</span>
+                </div>
+            </dd>
+        </div>
+    </form>
+</body>
+</html>
