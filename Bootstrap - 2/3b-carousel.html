@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <title>Bootstrap Carousel</title>
+
+    <style>
+        img {
+            width: 100vw;
+            height: 90vh;
+            object-fit: cover; /* Ensures images fit well without distortion */
+        }
+    </style>
+</head>
+<body>
+    <!-- Carousel Component -->
+    <div class="carousel carousel-fade" data-bs-ride="carousel" id="topBanner">
+        <div class="carousel-inner">
+            <!-- Active Item -->
+            <div class="carousel-item active">
+                <img src="/public/images/netflix-background.jpg" alt="Netflix Banner">
+            </div>
+            <!-- Other Items -->
+            <div class="carousel-item">
+                <img src="/public/images/amazon-festival.jpg" alt="Netflix Banner">
+            </div>
+            <div class="carousel-item">
+                <img src="/public/images/amazon.jpg" alt="Amazon Banner">
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#topBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#topBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
