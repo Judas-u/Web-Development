@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        #user {
+            color: blue;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="user">Hello user !</p>
+    <p id="user">Welcome home !</p>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    userElement = document.getElementById("user")
+    console.log(userElement); // Output: <p id="user">Hello user !</p>
+
+    userElement.textContent = "Byee user :(";
+    userElement.style.color = "green";
+    userElement.style.fontFamily = "cosmic sans ms";
+    userElement.style.fontSize = "40px";
+
+    // in one line change all the properties
+    userElement.style.cssText = "color: red; font-family: Comic Sans MS; font-size: 35px; font-weight: bold;";
+
+    //______This will select all elements with id "user"________
+    var userElements = document.querySelectorAll("#user");
+    console.log(userElements.length); // Output: 2
+
+
+</script>
+
