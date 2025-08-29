@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @media screen {
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        "use strict";
+        a=10;
+        console.log(a); // ReferenceError: a is not defined
+        // In strict mode, this will throw an error because 'a' is not declared with var, let, or const.
+
+        // <!-- 
+        //     "use strict"; 
+        //     a=10; 
+        //     console.log(a); 
+        // -->
+
+        // Developer can target new JavaScript code to the legacy browser by enclosing the code in HTML comments.
+    </script>
+
+    <script type="module">
+        import { add } from './add.js';
+        console.log(add(2, 3)); // 5
+    </script>
+</body>
+</html>
