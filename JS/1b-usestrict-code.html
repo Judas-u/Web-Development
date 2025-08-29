@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In Button</title>
+  <style>
+      .print-ticket {
+        background: linear-gradient(to right, #9E5BF3, #6C0EEF);
+        border-radius: 20px;
+        padding: 25px 40px;
+        color: white;
+        font-weight: bold;
+        border: 1px solid #6C0EEF;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 26px;
+      }
+
+      .print-ticket:hover {
+        background: linear-gradient(to right, #7438ac, #b702ff);
+        transform: scale(1.10);
+      }
+
+      .print-ticket::after {
+        content: " →";
+        margin-left: 5px;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+        background: #f4f4f4;
+      }
+    </style>
+
+    <script type="text/javascript">
+      
+      function printTicket(){
+          window.print();
+      }
+  </script>
+</head>
+<body>
+
+  <button class="print-ticket" onclick="printTicket()">Print Ticket</button>
+
+</body>
+</html>
