@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function loadContent() {
+            console.log("Function called");
+            window.document.images[0].src = "/public/images/maverick.png";
+
+            window.document.forms[0].elements[1].textContent = "Register";
+            window.document.forms[1].elements[1].textContent = "Login";
+
+            window.document.forms[0].elements[0].value = "Enter your username";
+            window.document.forms[1].elements[0].value = "Enter your email";
+            window.document.forms[0].elements[0].style.color = "grey";
+            window.document.forms[1].elements[0].style.color = "grey";
+
+        }
+    </script>
+</head>
+
+<body onload="loadContent()">
+    <div>
+        <img height="200px" width="400px" border="10px" src="" alt="Image will load on body load">
+    </div>
+
+    <div>
+        <form action="">
+            <h3>Register</h3>
+            Username: <input type="text" name="username" id="register-username">
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <form action="">
+            <h3>Login</h3>
+            Email: <input type="text" name="email" id="login-email">
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+</html>
