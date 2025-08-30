@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="box">
+        <p class="box">Hello</p>
+        <p class="box">World</p>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+   elements = document.getElementsByClassName("box");
+   console.log(typeof elements); // Output : object
+   console.log(elements); // Output: [p.box, p.box]
+
+   for(i = 0; i < elements.length; i++){
+        console.log(elements[i]);
+        elements[i].style.color = "Blue";
+        elements[i].style.fontWeight = "bold";
+        elements[i].style.fontSize = "25px";
+        elements[i].style.fontFamily = "Arial";      
+    }
+    // convert HTMLCollection to Array_____
+    console.log(Array.from(elements));
+
+    //using iterators_____
+    Array.from(elements).forEach( (value) => {
+            value.style.cssText = "color: green; font-size: 25px; font-weight: bold;";
+        }
+    )
+</script>
