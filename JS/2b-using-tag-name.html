@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        liElements = document.getElementsByTagName("li");
+        console.log(typeof liElements); // Output: object
+        console.log(liElements);
+
+        function changeEffects() {
+            [...liElements].forEach(function(value){
+                value.style.cssText = 'margin: 5px; color: purple;'
+            });
+        }
+    </script>
+</head> 
+<body>
+
+    <h2>My Shopping List</h2>
+    <ul id="myList" name="myList">
+        <li>iPhone</li>
+        <li>iPad</li>
+        <li>Macbook</li>
+    </ul>
+
+    <button onclick="changeEffects()">Highlight</button>
+</body>
+</html>
