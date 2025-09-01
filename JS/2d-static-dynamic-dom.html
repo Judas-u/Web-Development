@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        
+        function addItem() {
+            itemLengthUsingQuerySelector = document.querySelectorAll(".item");
+            itemLengthUsingclassName = document.getElementsByClassName("item");
+            
+            div = document.querySelector("div")
+            console.log(div);
+    
+            pElement = document.createElement("p")
+            pElement.className = "item"
+            pElement.textContent = "Item 3"
+            div.appendChild(pElement);
+
+            console.log("Length using querySelector  : " , itemLengthUsingQuerySelector); // Output: 1
+            console.log("Length using className      : " , itemLengthUsingclassName); // Output: 3
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <p class="item">Item 1</p>
+        <p class="item">Item 2</p>
+    </div>
+
+    <button onclick="addItem()">Add Item</button>
+</body>
+</html>
