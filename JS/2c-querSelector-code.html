@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="box">
+        <p class="box">Hello</p>
+        <p class="box">World</p>
+    </div>
+    <div id="sub" class="box">
+        <p class="box">How</p>
+        <p class="box">Are You</p>
+    </div>
+
+    <script type="text/javascript">
+
+        element = document.querySelector(".box");
+        console.log(element);
+        element.style.cssText = "color: red; border: 2px solid black;";
+
+        elements = document.querySelectorAll(".box");
+        elements.forEach(function(element){
+            element.style.cssText = "margin: 10px; color: blue; border: 2px solid black;";
+        })
+
+    </script>
+</body>
+</html>
