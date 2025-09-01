@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Submit Data via Query String</h2>
+
+    <form action="/submit-form" method="get">
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="John Doe">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value="johndoe@example.com">
+        </div>
+        <br>
+        <div>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message">Hello, world!</textarea>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>When you submit this form, the data from the input fields will be appended to the URL as a query string, like this:</p>
+    <p><code>/submit-form?name=John+Doe&email=johndoe%40example.com&message=Hello%2C+world%21</code></p>
+    <p>(Note: the exact encoding might vary slightly, but the principle is the same)</p>
+
+
+</body>
+</html>
