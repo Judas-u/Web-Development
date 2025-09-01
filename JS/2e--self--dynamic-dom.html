@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+
+  <script type="text/javascript">
+    function addItem() {
+        const items = document.getElementsByClassName("item");
+        const count = items.length + 1;
+
+        const div = document.getElementById("container");
+        const pElement = document.createElement("p");
+        pElement.className = "item";
+        pElement.textContent = "Item " + count;
+
+        div.appendChild(pElement);
+
+        console.log("Current number of items:", count);
+    }
+  </script>
+</head>
+<body>
+    
+  <div id="container">
+        <p class="item">Item 1</p>
+        <p class="item">Item 2</p>
+  </div>
+
+  <button onclick="addItem()">Add Item</button>
+</body>
+</html>
