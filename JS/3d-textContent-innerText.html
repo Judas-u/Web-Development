@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerText vs textContent</title>
+    <script type="text/javascript">
+        function showText() {
+            element = document.getElementById("container");
+            console.log(element.textContent); // Output: This is a Hidden word Another word.
+        }
+    </script>
+</head>
+
+<body id="container">
+    <p>This is a <span style="display: none;">Hidden</span> word</p>
+    <p>Another word.</p>
+
+    <button onclick="showText()">Show text</button>
+</body>
+</html>
