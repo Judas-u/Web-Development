@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        
+        function addContent() {
+
+            // document.write("<h3>New Heading</h3>\n");
+            // document.writeln("<p>This is a new paragraph added to the document.</p>");
+
+            // document.write("New Heading<br>");
+            // document.writeln("This is a new paragraph added to the document.<br>");
+            // document.writeln("Another line of text."); 
+
+
+
+            // ========================= N O T E ==================================
+            // The above lines will overwrite the entire document content
+            // and add the new content at the end.
+            // To avoid overwriting, we can use DOM manipulation instead.
+
+            // document.write is not recommended for modern web development
+            // because it can overwrite the entire document if called after the page has loaded.
+            // It's better to use DOM manipulation methods like appendChild or innerHTML.
+
+            // ------ Using DOM Manipulation ------
+            // Instead of using document.write, we can use DOM manipulation to add content
+
+            // ======================================================================
+
+
+            p = document.createElement("p");
+            p.textContent = "Buenos dias! Mucho gusto!";
+            p.style.color = "blue";
+            document.body.appendChild(p);
+        }
+    
+    </script>
+
+</head>
+<body>
+
+    <h1>Hello, World!</h1>
+
+    <button type="button" onclick="addContent()">Add content</button>
+
+</body>
+</html>
+
+
